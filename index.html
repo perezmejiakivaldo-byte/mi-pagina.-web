@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página web - CETAC 22</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Mi página web</h1>
+        <nav>
+            <a href="#texto">Texto</a>
+            <a href="#listas">Listas</a>
+            <a href="#tabla">Tabla</a>
+            <a href="#multimedia">Multimedia</a>
+            <a href="#formulario">Formulario</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <button id="btn-tema">Cambiar tema</button>
+        <p id="saludo"></p>
+    </header>
+
+    <main>
+        <section id="texto">
+            <h2>Elementos de texto</h2>
+            <p>Esta es mi primera página web para la práctica de <strong>GitHub y GitHub Pages</strong>. Aquí aplico <em>HTML, CSS y JavaScript</em>.</p>
+            <p>Texto con <b>negrita</b>, <i>cursiva</i> y <mark>texto resaltado</mark>.</p>
+            <blockquote>Cita destacada: "Aprender a programar es aprender a crear el futuro".</blockquote>
+            <hr>
+            <p>Salto de línea abajo:<br>Esta es otra línea.</p>
+            <a href="https://developer.mozilla.org/es/" target="_blank">Enlace externo a MDN</a>
+        </section>
+
+        <section id="listas">
+            <h2>Listas</h2>
+            <h3>Lista con viñetas</h3>
+            <ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <h3>Lista numerada</h3>
+            <ol><li>Crear repositorio</li><li>Escribir código</li><li>Publicar</li></ol>
+            <h3>Lista de definiciones</h3>
+            <dl>
+                <dt>HTML</dt><dd>Lenguaje para estructura de páginas.</dd>
+                <dt>CSS</dt><dd>Lenguaje para estilos y diseño.</dd>
+                <dt>GitHub Pages</dt><dd>Servicio para publicar páginas gratis.</dd>
+            </dl>
+        </section>
+
+        <section id="tabla">
+            <h2>Tabla</h2>
+            <table>
+                <caption>Tecnologías Web</caption>
+                <thead><tr><th>Tecnología</th><th>Función</th><th>Año</th></tr></thead>
+                <tbody>
+                    <tr><td>HTML</td><td>Estructura</td><td>1993</td></tr>
+                    <tr><td>CSS</td><td>Diseño</td><td>1996</td></tr>
+                    <tr><td>JavaScript</td><td>Interactividad</td><td>1995</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="multimedia">
+            <h2>Multimedia</h2>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Paisaje morado Chiapas" style="width:100%; border-radius:12px;">
+                <figcaption>Pie de foto: Paisaje en tonos morados - CETAC 22</figcaption>
+            </figure>
+            <h3>Video de YouTube</h3>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video de ejemplo" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <section id="formulario">
+            <h2>Formulario</h2>
+            <form id="miFormulario">
+                <label>Nombre: <input type="text" required></label>
+                <label>Correo: <input type="email" required></label>
+                <label>Número: <input type="number"></label>
+                <label>País: <select><option>México</option><option>Guatemala</option><option>Otro</option></select></label>
+                <label>Género: <input type="radio" name="genero"> Hombre <input type="radio" name="genero"> Mujer</label>
+                <label><input type="checkbox"> Acepto términos</label>
+                <label>Mensaje: <textarea></textarea></label>
+                <label>Fecha: <input type="date"></label>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <aside>
+        <h3>Barra lateral</h3>
+        <p>Contenido relacionado a CETAC 22.</p>
+        <details><summary>Desplegable - Ver más contenido</summary><p>Este es el elemento desplegable que pide la práctica.</p></details>
+    </aside>
+
+    <footer><p>&copy; 2026 Tu Nombre. Hecho con HTML, CSS y JavaScript - CETAC 22 - Tema Morado</p></footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
